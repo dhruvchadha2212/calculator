@@ -1,0 +1,84 @@
+@font-face {
+	font-family: digital;
+	src: url(digital-7.ttf);
+}
+#calcbody {
+    width: 400px;
+	height: 600px;
+	border: 2px solid black;
+	background-color: black;
+	position: relative;
+	border-radius: 20px;
+}
+div {
+	text-align: center;
+}
+#screen {
+	font-family: digital;
+	font-size: 25px;
+	width: 92%;
+	height: 15%;
+	box-sizing: border-box;
+	border: 5px solid white;
+	margin: 5% 4% 4%;
+	border-radius: 10px;
+	text-align: right;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: pre;
+	background-color: #cde6c5;
+}
+#screentext {
+	margin-top: 24px;
+	margin-right: 5px;
+	line-height: 22px;
+}
+.sqr, .rect {
+	float: left;
+	width: 20%;
+	height: 13%;
+	box-sizing: border-box;
+	margin-left: 4%;
+	margin-bottom: 2%;
+	position: relative;
+	position: relative;
+}
+.button {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	height: 80%;
+	background-color: rgb(238, 238, 238);
+	box-sizing: border-box;
+	border: 1px solid rgb(225,225,225);
+	box-shadow: 0 10px 2px rgb(187,187,187);
+	transition: top 0.05s linear, box-shadow 0.05s linear;
+}
+.button h1 {
+	margin: 0;
+	padding-top: 13px;
+}
+.sqr:hover, .rect:hover {
+	cursor: pointer;
+}
+.sqr:active .button, .rect:active .button {
+	top: 15px;
+	box-shadow: 0 0 0 rgb(240,240,240);
+}
+.rect {
+	width: 44%;
+}
+#clearone p, #clearall p {
+	margin: 0;
+	padding-top: 13px;
+	font-weight: bold;
+}
+#copyright {
+	position: absolute;
+	top: 94%;
+	left: 32%;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
